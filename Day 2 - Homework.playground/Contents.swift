@@ -35,8 +35,13 @@ ourPlanets(planets)
 //Question 2: Use reduce to create single string from the above array ["Venus", "Earth"] would produce "Venus, Earth"]
 
 
-let planetString = planets.reduce(""){"\($0) \($1)"}
+//let planetString = planets.reduce(""){"\($0) \($1)"}
 
+//this is the second way to do it with the names of the parameters.
+
+let planetString = planets.reduce("") { (planet, result) -> String in
+    "\(planet) \(result)"
+}
 
 //you can assign names and pass them as parameters to reduce
 
