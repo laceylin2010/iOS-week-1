@@ -32,12 +32,11 @@ ourPlanets(planets)
 
 
 
-//Question 2: Use reduce to create single strong from the above array ["Venus", "Earth"] would produce "Venus, Earth"]
+//Question 2: Use reduce to create single string from the above array ["Venus", "Earth"] would produce "Venus, Earth"]
 
 
-let planetString = planets.reduce(""){
-    "\($0) \($1)"
-}
+let planetString = planets.reduce(""){"\($0) \($1)"}
+
 
 //you can assign names and pass them as parameters to reduce
 
