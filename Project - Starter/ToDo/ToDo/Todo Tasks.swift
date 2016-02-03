@@ -25,6 +25,8 @@ extension TaskDo
     func add(object: Object)
     {
         self.task.append(object)
+        print("This is adding")
+        print("We have \(self.task.count)")
     
     }
     func remove(object: Object)

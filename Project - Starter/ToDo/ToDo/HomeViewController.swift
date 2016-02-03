@@ -14,7 +14,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let task1 = Todo(taskName: "Dishes", taskDate: "February 3, 2016", taskInfo: "Do the dishes in the sink")
+        TodoMemory.shared.add(task1)
+        print("This is adding dishes")
     }
+    
+  
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
