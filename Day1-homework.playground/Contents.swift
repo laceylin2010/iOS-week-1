@@ -28,9 +28,7 @@ func printAndCount(stringToPrint: String) -> Int{
     print(stringToPrint)
     return stringToPrint.characters.count
 }
-func printWithoutCounting(stringToPrint: String){
-    printAndCount(stringToPrint)
-}
+
 printAndCount("I like Apples")
 
 
@@ -47,6 +45,14 @@ for character in fruit.characters {
 }
 
 print(reverseFruit)
+
+
+
+
+
+
+
+
 
 
 
