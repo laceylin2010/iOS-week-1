@@ -14,9 +14,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let task1 = Todo(taskName: "Dishes", taskDate: "February 3, 2016", taskInfo: "Do the dishes in the sink")
-        TodoMemory.shared.add(task1)
-        print("This is adding dishes")
     }
     
   
@@ -36,6 +33,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = self.tableView.dequeueReusableCellWithIdentifier("todoCell", forIndexPath: indexPath)
         
         // Missing model.
+        
+        let item = TodoMemory.shared.objectAtIndex(indexPath.row)
+        cell.textLabel!.text = item?.taskName
+        
         // Missing setup.
         
         return cell
@@ -44,7 +45,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // MARK: UITableViewDataSource
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+       return TodoMemory.shared.count()
+        
+
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -61,6 +64,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if editingStyle == .Delete {
             
             // Missing model.
+            
+            //two ways to do it.
+            //store.share.removeObjectAt IndexPath(indexPath)
+            //sore.shared.removeObject(Store.shared.objectAtIndex(indexPath.row))
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
         }

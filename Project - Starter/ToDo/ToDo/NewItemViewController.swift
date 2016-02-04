@@ -31,6 +31,9 @@ class NewItemViewController: UIViewController {
         
         // Missing model.
         
+        let task = Todo(taskName: description, taskDate: NSDate())
+        TodoMemory.shared.add(task)
+        
         navigationController.popViewControllerAnimated(true)
     }
     

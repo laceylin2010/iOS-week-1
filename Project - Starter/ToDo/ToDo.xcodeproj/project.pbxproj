@@ -16,6 +16,7 @@
 		AF84C47B1C6295B100226E4F /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84C47A1C6295B100226E4F /* Todo.swift */; };
 		AF84C47D1C6295BF00226E4F /* Todo Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84C47C1C6295BF00226E4F /* Todo Tasks.swift */; };
 		AF84C47F1C629A3D00226E4F /* TodoMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84C47E1C629A3D00226E4F /* TodoMemory.swift */; };
+		AF9851021C63D34500C678DB /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9851011C63D34500C678DB /* Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AF84C47A1C6295B100226E4F /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		AF84C47C1C6295BF00226E4F /* Todo Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo Tasks.swift"; sourceTree = "<group>"; };
 		AF84C47E1C629A3D00226E4F /* TodoMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoMemory.swift; sourceTree = "<group>"; };
+		AF9851011C63D34500C678DB /* Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Additions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,10 @@
 		1CA2F7231C3DA3C700757A21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF9851011C63D34500C678DB /* Additions.swift */,
+				AF84C47C1C6295BF00226E4F /* Todo Tasks.swift */,
+				AF84C47E1C629A3D00226E4F /* TodoMemory.swift */,
+				AF84C47A1C6295B100226E4F /* Todo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -88,9 +94,6 @@
 		1CA2F7241C3DA3D400757A21 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				AF84C47C1C6295BF00226E4F /* Todo Tasks.swift */,
-				AF84C47E1C629A3D00226E4F /* TodoMemory.swift */,
-				AF84C47A1C6295B100226E4F /* Todo.swift */,
 				1CA2F70C1C3C2B6400757A21 /* HomeViewController.swift */,
 				1CA2F7271C3DB2C200757A21 /* NewItemViewController.swift */,
 			);
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9851021C63D34500C678DB /* Additions.swift in Sources */,
 				AF84C47D1C6295BF00226E4F /* Todo Tasks.swift in Sources */,
 				1CA2F70D1C3C2B6400757A21 /* HomeViewController.swift in Sources */,
 				AF84C47F1C629A3D00226E4F /* TodoMemory.swift in Sources */,
